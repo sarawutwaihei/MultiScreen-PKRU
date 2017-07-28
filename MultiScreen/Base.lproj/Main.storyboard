@@ -21,22 +21,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-fB-uYw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CP-fB-uYw">
                                 <rect key="frame" x="139.5" y="87" width="96" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3G-Eb-4P8">
+                                <rect key="frame" x="131.5" y="140" width="111" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Go to Second"/>
+                                <connections>
+                                    <segue destination="iyF-qf-T0z" kind="show" id="DEG-4c-EF8"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="0.36280935402684567" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5CP-fB-uYw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0FI-Xw-Ttj"/>
+                            <constraint firstItem="I3G-Eb-4P8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uma-DE-n7H"/>
+                            <constraint firstItem="I3G-Eb-4P8" firstAttribute="top" secondItem="5CP-fB-uYw" secondAttribute="bottom" constant="32.5" id="VrZ-Xk-t1h"/>
                             <constraint firstItem="5CP-fB-uYw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="b45-bJ-XIm"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="346" y="-30"/>
         </scene>
         <!--Seccnd View Controller-->
         <scene sceneID="gaG-ob-NCe">
@@ -53,12 +65,23 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo4-xU-29H">
                                 <rect key="frame" x="127.5" y="93" width="121" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI9-V7-ocB">
+                                <rect key="frame" x="123.5" y="141" width="127" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back to Finst"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Mmv-Fh-7vy"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.34466757550335569" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="tI9-V7-ocB" firstAttribute="centerX" secondItem="A8u-fn-i6A" secondAttribute="centerX" id="EQn-RF-yrW"/>
+                            <constraint firstItem="tI9-V7-ocB" firstAttribute="top" secondItem="vo4-xU-29H" secondAttribute="bottom" constant="27.5" id="ghG-DI-i46"/>
                             <constraint firstItem="vo4-xU-29H" firstAttribute="top" secondItem="tAF-rU-cRx" secondAttribute="bottom" constant="73" id="nWm-Lt-Iz4"/>
                             <constraint firstItem="vo4-xU-29H" firstAttribute="centerX" secondItem="A8u-fn-i6A" secondAttribute="centerX" id="ydB-yS-Szo"/>
                         </constraints>
@@ -66,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgf-0P-pBR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="36"/>
+            <point key="canvasLocation" x="1318" y="-35"/>
         </scene>
     </scenes>
 </document>

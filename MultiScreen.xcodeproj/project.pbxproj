@@ -13,6 +13,7 @@
 		2FC42DBB1F2AD800003A1816 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC42DBA1F2AD800003A1816 /* Assets.xcassets */; };
 		2FC42DBE1F2AD800003A1816 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC42DBC1F2AD800003A1816 /* LaunchScreen.storyboard */; };
 		2FC42DC61F2AD9B7003A1816 /* SeccndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC42DC51F2AD9B7003A1816 /* SeccndViewController.swift */; };
+		2FC42DC81F2ADEEB003A1816 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2FC42DC71F2ADEEB003A1816 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2FC42DBD1F2AD800003A1816 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FC42DBF1F2AD800003A1816 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC42DC51F2AD9B7003A1816 /* SeccndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeccndViewController.swift; path = ../SeccndViewController.swift; sourceTree = "<group>"; };
+		2FC42DC71F2ADEEB003A1816 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		2FC42DA71F2AD7FF003A1816 = {
 			isa = PBXGroup;
 			children = (
+				2FC42DC71F2ADEEB003A1816 /* README.md */,
 				2FC42DB21F2AD7FF003A1816 /* MultiScreen */,
 				2FC42DB11F2AD7FF003A1816 /* Products */,
 			);
@@ -141,6 +144,7 @@
 			files = (
 				2FC42DB61F2AD800003A1816 /* ViewController.swift in Sources */,
 				2FC42DB41F2AD800003A1816 /* AppDelegate.swift in Sources */,
+				2FC42DC81F2ADEEB003A1816 /* README.md in Sources */,
 				2FC42DC61F2AD9B7003A1816 /* SeccndViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
